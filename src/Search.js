@@ -6,9 +6,13 @@ class Search extends React.Component {
         return (
             <div className='searchbox'>
             <form role='searchbox'>
-                <label for='book-search'>Search:</label>
-                <input type='search' id='book-search' placeholder='Harry Potter'
-       aria-label='Search through books'></input>
+                <label htmlFor='book-search'>Search:</label>
+                <input 
+                    type='search' 
+                    id='book-search' 
+                    placeholder='Harry Potter' 
+                    value={this.props.state.search}>
+                </input>
                 <button>Search</button>
             </form>
             </div>
